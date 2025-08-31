@@ -63,6 +63,8 @@ html {
     --light-grey: #E0E0E0;
     --bright-grey: #ECECEC;
 
+    --accent: rgb(255 106 0);
+
     @media (prefers-color-scheme: dark) {
         --bright-white: #111;
         --paper-white: #1F1F1F;
@@ -112,6 +114,12 @@ a:hover,
 a:active {
     text-decoration: none;
     color: inherit;
+}
+small {
+    font-size: 10px;
+}
+[type='checkbox'] {
+    margin-right: 1ex;
 }
 
 .screenreader-only {
@@ -594,6 +602,67 @@ label + .nav-button {
 }
 .CodeMirror-scroll {
     -webkit-overflow-scrolling: touch;
+}
+
+dialog {
+    width: 40rem;
+    max-width: calc(100% - 2rem);
+    font-size: 1rem;
+    border: 1px solid var(--light-grey);
+    border-radius: 6px;
+    background: var(--paper-white);
+    color: var(--dark-grey);
+
+    &::backdrop {
+        background: var(--ink-black);
+        opacity: .5;
+        backdrop-filter: blur(10px);
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    * + p {
+        margin-top: 1em;
+    }
+
+    small {
+        line-height: 14px;
+    }
+
+    button {
+        position: absolute;
+        top: 6px;
+        right: 4px;
+        color: inherit;
+        svg path {
+            fill: currentColor;
+        }
+    }
+
+    a,
+    a:link,
+    a:visited {
+        text-decoration: underline;
+        color: var(--accent);
+    }
+}
+body:has(dialog[open]) {
+    .main-wrapper,
+    .codemirror-wrapper {
+        filter: blur(2px);
+        transition: filter .5s ease-in-out;
+    }
+}
+
+#matomo-opt-out {
+    font-size: 10px;
+    color: inherit;
+    strong {
+        font-weight: normal;
+    }
 }
 
 

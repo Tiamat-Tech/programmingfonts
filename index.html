@@ -95,6 +95,22 @@
 
     <link rel="stylesheet" href="fonts/stylesheets/stylesheet.css"><!-- Compiled (using less on node) with "lessc fonts.less > stylesheet.css" -->
     <link rel="stylesheet" href="index.css">
+
+    <!-- Matomo -->
+    <script>
+      var _paq = window._paq = window._paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//stats.koenlageveen.nl/";
+        _paq.push(['setTrackerUrl', u+'matomo.php']);
+        _paq.push(['setSiteId', '2']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <!-- End Matomo Code -->
 </head>
 
 <body>
@@ -301,8 +317,8 @@
                 </span>
 
 
-                <a class="support" href="https://github.com/braver/programmingfonts/issues/new?assignees=braver&labels=question&projects=&template=sponsoring-or-advertising.md&title=Add+sponsoring+or+advertising">
-                    <span>Support us</span>
+                <a class="support" href="https://github.com/braver/programmingfonts/blob/gh-pages/README.md" aria-controls="about-dialog">
+                    <span>About</span>
                 </a>
             </footer>
 
@@ -322,7 +338,55 @@
         </aside>
     </div>
 
+    <dialog id="about-dialog" autofocus>
+        <h2>
+            Programming Fonts
+        </h2>
+        <p>
+            This website is a passion project.
+            All fonts in one place, with proper credits towards the creators.
+            It's not a download portal, no monetization or business plan,
+            it's strictly by nerds and designers for nerds and designers.
+        </p>
+        <p>
+            There are some small costs involved in maintaining and hosting this website.
+            If you want to help out in some way,
+            please send a donation via
+            <a href="https://paypal.me/koenlageveen" rel="external">PayPal</a>.
+        </p>
+        <p>
+            Please feel welcome to contibute to the project at
+            <a href="https://github.com/braver/programmingfonts">GitHub</a>.
+        </p>
 
-<script src="index.js" type="module"></script>
+        <p class="signature">
+          <svg width="166px" height="78px" viewBox="36 33 498 234" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M149.121094,33.8320312 C149.121094,33.8320312 20.2376234,156.514761 38.6054688,211.378906 C51.5394535,241.979025 143.144531,185.710938 143.144531,185.710938" id="Path" stroke="currentColor" stroke-width="1" fill="none"></path>
+            <path d="M287.851563,56.5195312 C287.851563,56.5195312 233.523438,105.035156 208.847656,133.9375 C184.171875,162.839844 146.773438,209.050781 169.632813,233.125 C192.492188,257.199219 245.144531,216.253906 245.144531,216.253906" id="Path-2" stroke="currentColor" stroke-width="1" fill="none"></path>
+            <path d="M269.683594,160.347656 C269.683594,160.347656 301.522074,154.107791 308.560637,194.274452 C312.732157,221.589914 286.142069,240.89427 270.185038,251.292708 C254.228006,261.691145 231.304688,265.550781 231.304688,265.550781" id="Path-3" stroke="currentColor" stroke-width="1" fill="none"></path>
+            <path d="M92.932042,229.116604 C92.932042,229.116604 87.3326109,229.554235 124.677114,217.872856 C162.021616,206.191478 339.820312,169.085938 395.425781,159.929688 C451.03125,150.773438 532.585937,139.550781 532.585937,139.550781" id="Path-4" stroke="currentColor" stroke-width="1" fill="none"></path>
+          </svg><br>
+          Koen Lageveen
+        </p>
+
+        <!-- matomo optout -->
+        <p>
+          <small>This website uses Matomo to collect anonymous statistics,
+          for my own curiosity.
+          No cookies are used and no data will ever be shared.
+          You are welcome to opt out
+          (if you use a content blocker, this option will not appear):</small>
+        </p>
+        <div id="matomo-opt-out"></div>
+        <script src="https://stats.koenlageveen.nl/index.php?module=CoreAdminHome&action=optOutJS&divId=matomo-opt-out&language=auto&showIntro=0"></script>
+        <!-- / matomo optout -->
+
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg>
+            <span class="screenreader-only">Close</span>
+        </button>
+    </dialog>
+
+    <script src="index.js" type="module"></script>
 </body>
 </html>

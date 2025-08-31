@@ -2,8 +2,11 @@
 	"folders":
 	[
 		{
-			"path": "."
-		}
+			"path": ".",
+		},
+		{
+			"path": "/Users/koenlageveen/Sites/website"
+		},
 	],
 	"build_systems": [
 		{
@@ -11,7 +14,7 @@
 			"working_dir": "$folder",
 			"quiet": false,
 			"shell": true,
-			"cmd": [ "ajv -s fonts-schema.json -d fonts.json" ]
+			"cmd": [ "ajv -s fonts-schema.json -d fonts.json"],
 		}
-	]
+	],
 }

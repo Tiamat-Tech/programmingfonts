@@ -3,18 +3,18 @@ Programming Fonts
 
 Test drive programming fonts [online in your browser](https://www.programmingfonts.org/). The interactive counter part of the [Tumblr Blog](https://programmingfonts.tumblr.com).
 
-ProgrammingFonts.org makes it easier to find monospaced fonts. All fonts in one place, with proper credits towards the creators. It's not a download portal, we don't track anything, it's strictly by nerds and designers for nerds and designers.
-
-## 10th Anniversay Edition 🎂
-
-Now featuring side by side comparison, and more code samples!
+ProgrammingFonts.org makes it easier to find monospaced fonts. All fonts in one place, with proper credits towards the creators. It's not a download portal, no monetization or business plan, it's strictly by nerds and designers for nerds and designers.
 
 ## Buy me a coffee
 
 ☕️👌🏻
 
-This website is powered by coffee. No ads, no tracking, no monetization. We do have some costs for the domain name however.
+This website is powered by coffee. No ads, no monetization, no business model. We do have some costs for the domain name however.
 Please feel free to make a little [donation via PayPal](https://paypal.me/koenlageveen) to keep this labour of love running. It's much appreciated!
+
+## Statistics
+
+The website uses a self-hosted, on EU servers, version of [Matomo](https://matomo.org) to collect some statistics about visits to the site. It's tweaked to be as anonymous as possible and to not track you: no cookies are used, IP addresses are masked, etc. I'm just curious about the number of visits etc. 
 
 ## Project layout / contributing
 

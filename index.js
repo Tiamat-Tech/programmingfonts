@@ -309,4 +309,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
     parent.appendChild(clone)
   }
+
+  document.querySelectorAll('dialog').forEach((dialog) => {
+    dialog.querySelector('button').onclick = (event) => {
+      event.preventDefault()
+      event.stopPropagation()
+      dialog.close()
+    }
+
+    document.querySelector('[aria-controls="' + dialog.id + '"]').onclick = (event) => {
+      event.preventDefault()
+      event.stopPropagation()
+      dialog.showModal()
+    }
+  })
 })
